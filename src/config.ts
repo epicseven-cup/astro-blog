@@ -1,19 +1,19 @@
 import type { Site, SocialObjects } from "./types";
 
 export const SITE: Site = {
-  website: "https://astro-paper.pages.dev/", // replace this with your deployed domain
+  website: "https://blog.latitude.moe/", // replace this with your deployed domain
   author: "Sat Naing",
-  profile: "https://satnaing.dev/",
-  desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
-  title: "AstroPaper",
+  profile: "https://latitude.moe/",
+  desc: "Jacky's Tech Blog",
+  title: "Blog",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
   postPerIndex: 4,
-  postPerPage: 3,
+  postPerPage: 5,
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
   showArchives: true,
   editPost: {
-    url: "https://github.com/satnaing/astro-paper/edit/main/src/content/blog",
+    url: "https://github.com/epicseven-cup/blog.latitude.moe/edit/main/src/content/blog",
     text: "Suggest Changes",
     appendFilePath: true,
   },
@@ -34,7 +34,7 @@ export const LOGO_IMAGE = {
 export const SOCIALS: SocialObjects = [
   {
     name: "Github",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://github.com/epicseven-cup",
     linkTitle: ` ${SITE.title} on Github`,
     active: true,
   },
@@ -42,25 +42,25 @@ export const SOCIALS: SocialObjects = [
     name: "Facebook",
     href: "https://github.com/satnaing/astro-paper",
     linkTitle: `${SITE.title} on Facebook`,
-    active: true,
+    active: false,
   },
   {
     name: "Instagram",
     href: "https://github.com/satnaing/astro-paper",
     linkTitle: `${SITE.title} on Instagram`,
-    active: true,
+    active: false,
   },
   {
     name: "LinkedIn",
     href: "https://github.com/satnaing/astro-paper",
     linkTitle: `${SITE.title} on LinkedIn`,
-    active: true,
+    active: false,
   },
   {
     name: "Mail",
-    href: "mailto:yourmail@gmail.com",
+    href: "mailto:owner@latitude.moe",
     linkTitle: `Send an email to ${SITE.title}`,
-    active: false,
+    active: true,
   },
   {
     name: "X",
@@ -152,4 +152,11 @@ export const SOCIALS: SocialObjects = [
     linkTitle: `${SITE.title} on Mastodon`,
     active: false,
   },
+  {
+    name: "Misskey",
+    href: "https://misskey.latitude.moe/@latitude",
+    linkTitle: `${SITE.title} on Misskey`,
+    active: true,
+  },
+
 ];
